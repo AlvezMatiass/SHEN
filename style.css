@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    background-color: #111;
+    background-color: rgb(19, 18, 18);
     color: white;
 }
 
@@ -25,26 +25,26 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(245, 244, 224);
-    color: #111;
+    background-color: rgb(238, 238, 233);
+    color: rgb(24, 23, 23);
 }
 
 .navLogo {
-    margin: 0 0 0 1rem;
+    margin: 0 0 0 2rem;
 }
 
 .navLogo a p {
-    font-weight: 900;
-    font-size: 1.4rem;
+    font-weight: 500;
+    font-size: 2rem;
 }
 
 .navLogo a {
-    color: #111;
+    color: rgb(24, 23, 23);
 }
 
 .navContainer ul {
     display: flex;
-    margin: 0 1rem 0 0;
+    margin: 0 2rem 0 0;
 }
 
 .navContainer ul li {
@@ -52,7 +52,7 @@ li {
 }
 
 .navContainer ul li a {
-    color: #111;
+    color: rgb(24, 23, 23);
     font-weight: 700;
 }
 
@@ -65,12 +65,12 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 92vh;
+    padding: 2rem 0 0 0;
 }
 
 .videoCardContainer {
     padding: .5rem 1rem;
-    margin: 1rem 0;
+    margin: 1.5rem 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,10 +82,9 @@ li {
 }
 
 .tituloInfo {
-    color: rgb(245, 244, 224);
+    color: rgb(238, 238, 233);
     font-size: 1.2rem;
-    font-weight: 700;
-    margin: .5rem 0;
+    font-weight: 300;
 }
 
 @media (max-width: 600px) {
@@ -102,12 +101,34 @@ li {
     .tituloInfo {
         font-size: 1rem;
     }
+
+    .navContainer ul {
+        display: flex;
+        margin: 0 1rem 0 0;
+    }
+    
 }
 
 @media (max-width: 450px) {
     .video iframe {
+        width: 320px;
+        height: 160px;
+        margin: auto;
+    }
+
+    .videoInfo {
+        width: 320px;
+    }
+
+    .tituloInfo {
+        font-size: .95rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .video iframe {
         width: 300px;
-        height: 150px;
+        height: 140px;
         margin: auto;
     }
 
@@ -117,21 +138,5 @@ li {
 
     .tituloInfo {
         font-size: .9rem;
-    }
-}
-
-@media (max-width: 300px) {
-    .video iframe {
-        width: 280px;
-        height: 130px;
-        margin: auto;
-    }
-
-    .videoInfo {
-        width: 280px;
-    }
-
-    .tituloInfo {
-        font-size: .8rem;
     }
 }
